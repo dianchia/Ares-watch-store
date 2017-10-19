@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Send Us A Message</title>
+<link rel="stylesheet" type="text/css" href="coments style.css">
+</head>
+<body>
+<center><a href="homepage-ares.html"><img src="aresfinal.png" height="70px" width="70px" alt="ARES logo"></a></center>
+<form action="post" id="commentform">
+<label>Subject of the inquiry </label><br>
+<select name="subject">
+	<option value="after sales service">After sales service</option>
+	<option value="request">Price or catalog request</option>
+	<option value="advertising">Advertising</option>
+	<option value="sponsoring">Sponsoring</option>
+	<option value="other">Other</option>
+</select><br><br>
+<label>Title: <br></label>
+<input type="radio" name="title" id="title">Mr
+<input type="radio" name="title" id="title">Mrs
+<input type="radio" name="title" id="title">Ms<br><br>
+<label>First name: <br>
+<input type="text" name="fname" id="fname" required></label><br><br>
+<label>Last name: <br>
+<input type="text" name="lname" id="lname" required></label><br><br>
+<label>E-mail: <br>
+<input type="email" name="email" id="email" required></label><br><br>
+<label>Phone number: <br>
+<input type="tel" name="pnumber" id="pnumber"></label><br><br>
+<label>Address: <br>
+<input type="text" name="address" id="address"></label><br><br>
+<label>City: <br>
+<input type="text" name="city" name="city" id="city"></label><br><br>
+<label>Comments: <br>
+<textarea name="comment" form="commentform" cols="50" rows="5">Enter text here...</textarea><br><br>
+<input type="submit" value="SEND">
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+td { text-align: center;
+	font-weight: bold;
+}
+
+#intro { font-family: Georgia,serif;
+}
+
+#fieldset-width { display: inline-block;
+}
+
+fieldset { margin: 0 5px;
+}
+
+#button { position: absolute;
+		left: 0;
+		bottom: 0;
+}
+
+#main { position: relative;
+}
