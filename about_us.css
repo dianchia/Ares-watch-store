@@ -1,0 +1,6 @@
+html, body { background: linear-gradient(0deg, orange, yellow);
+		background-repeat: no-repeat; 
+		height: 100%; }
+
+.header { display: inline; text-decoration: none;  }
+
