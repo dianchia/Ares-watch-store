@@ -7,79 +7,148 @@
 </head>
 
 <body>
-<a name = "top"></a> <!-- back to top -->
 
-<ul>
-	<li><a href = "#"><img src = "areslogo.png" width = "50" height = "50"
-	alt = "ARES"></a></li>
-	<li><a href = "#">Products</a></li>
-	<li><a href = "#">Contact Us</a></li>
-	<li><a href = "#">News</a></li>
-	<li><a href = "about.html">About Us</a></li>
-</ul>
+<div class = "main"> <!-- push everything inside so that
+					footer don't overlap with timeline -->
 
-<div class = "About">
-<h1>About Us</h1>
-<p>
-Ares aims to be a market leader in luxury watches.
-Founded as a small watch shop in 2000, we want to make the highest quality watches for our customers to be proud of wearing.<br>
-</p>
+	<a name = "top"></a> <!-- back to top -->
+
+	<!-- Top navigation -->
+	<div class = "nav">
+		<ul>
+			<li><a href = "#"><img src = "areslogo.png" width = "50" height = "50"
+			alt = "ARES"></a></li>
+			<li><a href = "#">Products</a></li>
+			<li><a href = "#">Contact Us</a></li>
+			<li><a href = "#">News</a></li>
+			<li><a href = "about.html">About Us</a></li>
+		</ul>
+	</div>
+
+	<!-- 1st part: About Us -->
+	<div class = "About">
+		<h1>About Us</h1>
+		<p>
+		Ares aims to be a market leader in luxury watches.
+		Founded as a small watch shop in 2000, we want to make the highest quality watches for our customers to be proud of wearing.<br>
+		</p>
+	</div>
+
+	<!-- 2nd part: Company timeline -->
+	<br>
+	<h1>Company Timeline</h1>
+
+	<div class = "timeline">
+		<div class="container left">
+			<div class="content" id="left">
+			  <h2 style = "text-align:left;">2017</h2>
+			  <p>Ares becomes leading brand of watches, with sales of 5 million.</p>
+			</div>
+		</div>
+		<div class="container right">
+			<div class="content" id="right">
+			  <h2 style = "text-align:left;">2015</h2>
+			  <p>Ares collaborates with RMAF (Royal Malaysian<br>Air Force)
+			  to create special editions of Ares<br>watches.</p>
+			  <img src = "rmaf.png" width = "120px" height = "120px"
+			  alt = "pocket watch" class = "image_right"
+			  style = "bottom:130px;left:10px;">
+			</div>
+		</div>
+		<div class="container left">
+			<div class="content" id="left">
+			  <h2 style = "text-align:left;text-indent:100px">2013</h2>
+			  <p><img src = "ledwatch.jpg" width = "100px" height = "100px"
+			  alt = "chrono watch" class = "image_left" 
+			  style = "bottom:65px;">
+			  Ares launches new line of LED watches.</p>
+			</div>
+		</div>
+		<div class="container right">
+			<div class="content" id="right">
+			  <h2 style = "text-align:left;">2011</h2>
+			<p>Sales of Ares watches hit <strong>1 million</strong>.</p>
+			</div>
+		</div>
+		<div class="container left">
+			<div class="content" id="left">
+			  <h2 style = "text-align:left;text-indent:120px">2003</h2>
+			  <p><img src = "chrono.jpg" width = "120px" height = "120px"
+			  alt = "chrono watch" class = "image_left">Ares stops producing pocket watches<br>due to low sales.
+			  <br>
+			  Begins development and production<br>of automatic chronograph watches.</p>
+			  
+			</div>
+		</div>
+		<div class="container right">
+			<div class="content" id="right">
+			  <h2 style = "text-align:left;">2001</h2>
+			  <p>Ares launches its first pocket watch.</p>
+			  <img src = "pocketwatch.jpg" width = "120px" height = "120px"
+			  alt = "pocket watch" class = "image_right">
+			</div>
+		</div>
+		<div class="container left">
+			<div class="content" id="left">
+			  <h2 style = "text-align:left;">2000</h2>
+			  <p>Ares is founded in Kuala Lumpur.</p>
+			</div>
+		</div>
+	</div>
+
+	<p class = "top"><a href = "#top" id = "backtop">BACK TO TOP</a></p>
+
+	<br><br>
+
 </div>
 
-<br>
-<h1>Company Timeline</h1>
-
-<div class = "timeline">
-	<div class="container left">
-		<div class="content" id="left">
-		  <h2>2017</h2>
-		  <p>Ares becomes leading brand of watches, with sales of 5 million.</p>
-		</div>
-	</div>
-	<div class="container right">
-		<div class="content" id="right">
-		  <h2>2015</h2>
-		  <p>Ares collaborates with RMAF (Royal Malaysian Air Force) to create special editions of Ares watches.</p>
-		</div>
-	</div>
-	<div class="container left">
-		<div class="content" id="left">
-		  <h2>2013</h2>
-		  <p>Ares launches new line of LED watches.</p>
-		</div>
-	</div>
-	<div class="container right">
-		<div class="content" id="right">
-		  <h2>2011</h2>
-		<p>Sales of Ares watches hit 1 million.</p>
-		</div>
-	</div>
-	<div class="container left">
-		<div class="content" id="left">
-		  <h2>2003</h2>
-		  <p>Ares stops producing pocket watches due to low sales.</p>
-		  <p>Begins development and production of automatic chronograph watches.</p>
-		</div>
-	</div>
-	<div class="container right">
-		<div class="content" id="right">
-		  <h2>2001</h2>
-		  <p>Ares launches its first pocket watch.</p>
-		</div>
-	</div>
-	<div class="container left">
-		<div class="content" id="left">
-		  <h2>2000</h2>
-		  <p>Ares is founded in Kuala Lumpur.</p>
-		</div>
-	</div>
+<!-- Pop-up Footer -->
+<div class="footer">
+	<footer>
+		<table border="0" width="100%" cellpadding="5px">
+			<tr>
+				<th>FOLLOW US</th>
+				<th>COLLECTIONS</th>
+				<th>UNIVERSES</th>
+				<th>COMPANY INFO</th>
+				<th>CUSTOMER SUPPORT</th>
+				<th>PRIVACY &amp; TERMS</th>
+			</tr>
+			<tr>
+				<td><a href="facebook.com" target="_blank">Facebook</a></td>
+				<td><a href=" ">Greaves</a></td>
+				<td><a href=" ">Sports</a></td>
+				<td><a href="about.html" target="_blank">About Us</a></td>
+				<td><a href="contactus.html" target="_blank">Contact Us</a></td>
+				<td><a href="" target="_blank">Terms of Use</a></td>
+			</tr>
+			<tr>
+				<td><a href=" " target="_blank">Twitter</a></td>
+				<td></td>
+				<td><a href=" ">Casual</a></td>
+				<td></td>
+				<td><a href="cscenter.html" target="_blank">Customer Service</a></td>
+				<td><a href=" " target="_blank">Legal Terms</a></td>
+			</tr>
+			<tr>
+				<td><a href=" " target="_blank">Instagram</a></td>
+				<td></td>
+				<td><a href=" " target="_blank">Luxury</a></td>
+				<td></td>
+				<td></td>
+				<td><a href=" " target="_blank">Privacy Policy</a></td>
+			</tr>
+			<tr>
+				<td><a href=" " target="_blank">Youtube</a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><a href=" " target="_blank">Terms &amp; Condition</a></td>
+			</tr>
+		</table>	
+	</footer>
 </div>
-
-<hr>
-<footer>
-	<p>&copy; 2017 ARES. ALL RIGHTS RESERVED</p>
-	<a href = "#top" id = "backtop">Back to top</a>
-</footer>
 
 </body>
 </html>
