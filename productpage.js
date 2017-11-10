@@ -29,7 +29,7 @@ function show_image(){
 	document.getElementById("description").innerHTML = description;
 }
 
-function startTime() { //to add time just call startTime() function at where you want to call it
+function startTime() { //to add time just call this function and it will display at the id="time" div
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
@@ -43,4 +43,9 @@ function startTime() { //to add time just call startTime() function at where you
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
+}
+
+function getDate(){ //to add date just call this function and it will display at the id="date" div
+	var date = new Date();
+	document.getElementById("date").innerHTML = date.toDateString();
 }
