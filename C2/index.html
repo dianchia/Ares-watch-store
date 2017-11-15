@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Ares - Home Page</title>
+<style>
+</style> 
+<link rel="stylesheet" href="homepage.css">
+<script src="NewsArticle.js"></script>
+</head>
+
+<body>	
+
+<header>
+
+<div class="NaviBar">
+	
+	<script>
+		function play(){
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+	</script>
+
+	<audio id="audio" src="beep1.mp3"></audio>		
+		
+		<ul class="Navi">
+			<li class="NaviC">
+				<a href="index.html" onmouseover="play()">
+					<img id="logo" src="logo/WhiteNewerAresLogo.png">
+				</a>
+			</li>
+			
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="index.html" onmouseover="play()">Home</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="productpage.html" onmouseover="play()">Products</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="NewsPage.html" onmouseover="play()">News</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="about.html" onmouseover="play()">About Us</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="contactus.html" onmouseover="play()">Contact Us</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+		</ul>
+	</div>
+	
+
+</header>
+
+<div class="slideshow">	
+
+	<ul id="slides">
+		<li class="slide showing"><img src="Images\Slide\watchbanner01.jpg" alt="Slide1"></li>
+		<li class="slide"><img src="Images\Slide\watchbanner02.jpg" alt="Slide2"></li>
+		<li class="slide"><img src="Images\Slide\watchbanner03.jpg" alt="Slide3"></li>
+	</ul>
+	
+	<button class="controls" id="previous">&lt;</button>	
+	<button class="controls" id="next">&gt;</button>
+	
+	<script>
+		var slides = document.querySelectorAll('#slides .slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide,4000);
+
+		function nextSlide() {
+		goToSlide(currentSlide+1);
+		}
+
+		function previousSlide() {
+			goToSlide(currentSlide-1);
+		}
+
+		function goToSlide(n) {
+			slides[currentSlide].className = 'slide';
+			currentSlide = (n+slides.length)%slides.length;
+			slides[currentSlide].className = 'slide showing';
+		}
+		
+		var next = document.getElementById('next');
+		var previous = document.getElementById('previous');
+
+		next.onclick = function() {
+			nextSlide();
+		};
+		previous.onclick = function() {
+			previousSlide();
+		};
+	</script>
+</div>
+
+<br>
+
+<div class="topitem">
+<h1>Ares's Collection</h1>
+
+	<a href="productpage.html#sallet"><ul>
+		<li><img src="Images/Watches/High End/HE-watch3.png"></li>
+		<li>Sallet</li>
+	</ul></a>
+	
+	&nbsp;
+	<a href="productpage.html#pauldron"><ul>
+		<li><img src="Images/Watches/Mid End/ME-watch1.png"></li>
+		<li>Pauldron</li>
+	</ul></a>
+	
+	&nbsp;
+	<a href="productpage.html#greaves"><ul>
+		<li><img src="Images/Watches/Low End/LE-watch4.png"></li>
+		<li>Greaves</li>
+	</ul></a>
+	
+	<br><br>
+	
+	<div class="ti-a"><a href="productpage.html">View All</a></div>
+	
+	<br><br>
+</div>
+
+<br>
+
+<div class="videoad">
+<video controls>
+  <source src="Video/videoad.mp4" type="video/mp4">
+</video>
+</div>
+
+<br>
+<br>
+
+<div class="news">
+<h1>News and Announcements</h1>
+<br>
+<table>
+
+	<tr>
+		<td id="newsimg" rowspan="2"><a id="1" onClick="ids(this.id)"><img src="Images/News/newwatch.png" alt="Pic1"></a></td>
+		<td id="newsdate">5th Dec 2017</td>
+	</tr>
+	
+	<tr>
+		<td id="newstitle"><a id="1" onClick="ids(this.id)">Latest Watch has been announced, pre-order starts early next January.</a></td>
+	</tr>
+	<tr id="blankrow"><td id="blankrow" colspan="2"></td></tr>
+	<tr id="blankrow"><td colspan="2"></td></tr>
+	
+
+	<tr>
+		<td id="newsimg" rowspan="2"><a id="2" onClick="ids(this.id)"><img src="Images/News/financechart.jpg" alt="Pic2"></a></td>
+		<td id="newsdate">9th Sep 2017</td>
+	</tr>	
+	<tr>
+		<td id="newstitle"><a id="2" onClick="ids(this.id)">Q3 Earnings Report has been released</td>
+	</tr>
+	<tr id="blankrow"><td id="blankrow" colspan="2"></td></tr>
+	<tr id="blankrow"><td colspan="2"></td></tr>
+	
+
+	<tr>
+		<td id="newsimg" rowspan="2"><a id="3" onClick="ids(this.id)"><img src="Images/News/swordseries.png" alt="Pic3"></a></td>
+		<td id="newsdate">28th August 2017</td>
+	</tr>
+	<tr>
+		<td id="newstitle"><a id="3" onClick="ids(this.id)">Limited Edition Sword Series has been sold out.</td>
+	</tr>
+	<tr id="blankrow"><td id="blankrow" colspan="2"></td></tr>
+	<tr id="blankrow"><td colspan="2"></td></tr>
+	
+
+	<tr>
+		<td id="newsimg" rowspan="2"><a id="4" onClick="ids(this.id)"><img src="Images/News/ldc-revenant.jpg" alt="Pic4"></a></td>
+		<td id="newsdate">16th August 2017</td>
+	</tr>
+	<tr>
+		<td id="newstitle"><a id="4" onClick="ids(this.id)">Revenant Star has joined Ares Ambassador Alliance</td>
+	</tr>
+	
+</table>
+	<br><br>
+
+<a id="newsbutton" class="ti-a" href="newspage.html">View All</a>
+
+</div>
+<br>
+
+<div class="footer">
+<br>
+	<table>
+		<tr><th>Follow Us</th></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.facebook.com">Facebook</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.twitter.com">Twitter</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.instagram.com">Instagram</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.youtube.com">Youtube</a></td></tr>
+	</table>
+
+	<table>
+		<tr><th>Collection</th></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="productpage.html#greaves">Greaves</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="productpage.html#pauldron">Pauldron</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="productpage.html#sallet">Sallet</a></td></tr>
+	</table>
+	
+	<table>
+		<tr><th>Company Info</th></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="about.html">About Us</a></td></tr>
+	</table>
+
+	<table>
+		<tr><th>Customer Support</th></tr>
+		<tr><td><a class="underline" onmouseover="play()"  href="contactus.html">Contact Us</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="cscenter.html">Customer Service</td></tr>
+	</table>
+	<br><br>
+</div>
+
+</body>
+
+</html>

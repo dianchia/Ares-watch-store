@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Send Us A Message</title>
+<link type="text/css" rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" type="text/css" href="contactus style.css">
+
+<script src="comments.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<div class="NaviBar">
+	
+	<script>
+		function play(){
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+	</script>
+
+	<audio id="audio" src="beep1.mp3"></audio>		
+		
+		<ul class="Navi">
+			<li class="NaviC">
+				<a href="index.html" onmouseover="play()">
+					<img id="logo" src="logo/WhiteNewerAresLogo.png">
+				</a>
+			</li>
+			
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="index.html" onmouseover="play()">Home</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="productpage.html" onmouseover="play()">Products</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="NewsPage.html" onmouseover="play()">News</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="about.html" onmouseover="play()">About Us</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+			<li class="NaviC NaviUp overline">
+				<a href="contactus.html" onmouseover="play()">Contact Us</a>
+			</li>
+			<li class="NaviC blankspace">&nbsp;</li>
+			
+		</ul>
+	</div>
+</header>
+
+
+<div class="maincomment">
+<div class="comments">
+	<label id="biggest">Subject of the inquiry </label><br>
+	<select name="subject">
+		<option value="after sales service">After sales service</option>
+		<option value="request">Price or catalog request</option>
+		<option value="advertising">Advertising</option>
+		<option value="sponsoring">Sponsoring</option>
+		<option value="other">Other</option>
+	</select><br><br>
+	<label id="biggest">Title: <br></label>
+	<input type="radio" name="title" id="title">Mr
+	<input type="radio" name="title" id="title">Mrs
+	<input type="radio" name="title" id="title">Ms<br><br>
+	<label>First name: <br>
+	<input type="text" name="fname" id="fname" required></label><br><br>
+	<label>Last name: <br>
+	<input type="text" name="lname" id="lname" required></label><br><br>
+	<label>E-mail: <br>
+	<input type="email" name="email" id="email" required></label><br><br>
+	<label>Phone number: <br>
+	<input type="tel" name="pnumber" id="pnumber"></label><br><br>
+	<label>Address: <br>
+	<input type="text" name="address" id="address"></label><br><br>
+	<label>City: <br>
+	<input type="text" name="city" name="city" id="city"></label><br><br>
+	<label>Comments: <br>
+	<textarea name="comment" form="commentform" cols="50" rows="5"></textarea><br><br>
+	<div class="suambutton"><button onClick="submits()">Send</button></div>
+</div>
+</div>
+
+
+<div class="footer">
+<br>
+	<table>
+		<tr><th>Follow Us</th></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.facebook.com">Facebook</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.twitter.com">Twitter</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.instagram.com">Instagram</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="https://www.youtube.com">Youtube</a></td></tr>
+	</table>
+
+	<table>
+		<tr><th>Collection</th></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="productpage.html#greaves">Greaves</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="productpage.html#pauldron">Pauldron</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="productpage.html#sallet">Sallet</a></td></tr>
+	</table>
+	
+	<table>
+		<tr><th>Company Info</th></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="about.html">About Us</a></td></tr>
+	</table>
+
+	<table>
+		<tr><th>Customer Support</th></tr>
+		<tr><td><a class="underline" onmouseover="play()"  href="contactus.html">Contact Us</a></td></tr>
+		<tr><td><a class="underline" onmouseover="play()" href="cscenter.html">Customer Service</td></tr>
+	</table>
+	<br><br>
+</div>
+
+
+</body>
+
+</body>
+</html>

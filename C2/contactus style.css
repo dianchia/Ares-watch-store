@@ -1,0 +1,133 @@
+#main{
+	font-size:17px; 
+	background-color:white;
+	text-align:center;
+}
+
+#intro{
+	color:#07131a;
+	font-size:25px;
+	letter-spacing:10px;
+	background-color:#eeeeee;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#intro h1{
+	color:black;
+	font-size:50px;
+}
+
+#intro p{
+	width:70%;
+	font-size:18px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing:5px;
+}
+
+.fieldset{
+	//background-color:;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	color:black;
+	position:relative;
+	//border:5px solid yellow;
+}
+
+.fieldset h2{
+	font-size: 40px;
+	letter-spacing:12.5px;
+	font-weight:normal;
+}
+
+.fieldset h3{
+	font-size: 25px;
+	letter-spacing:7px;
+}
+
+.fieldset fieldset{
+	border-left: 0;
+	border-right:0;
+}
+
+.fieldset table{
+	width:100%;
+}
+
+.fieldset img{
+	width:20%;
+	min-width:110px;
+	transition: all 0.15s ease-in-out;
+}
+
+.fieldset img:hover{
+	transform:scale(1.15);
+}
+
+.fieldset a{
+	text-decoration:none;
+	color:black;
+}
+
+.contactus{
+	border-left:1px solid black;
+	text-align:left;
+	padding:0;
+	padding-left:50px;
+	margin:0;
+}
+
+.fieldset th{
+	text-align:left;
+}
+
+.suambutton{
+	display:block;
+	text-align:right;
+	width:95%;
+}
+
+.suambutton button{
+	border:0;
+	right:10px;
+	bottom:20px;
+	font-size:15px;
+	font-weight:bold;
+	letter-spacing:4px;
+	text-transform:uppercase;
+	color:white;
+	background-color:black;
+	padding:5px;
+	cursor:pointer;
+	transition: all 0.15s ease-in-out;
+}
+
+.suambutton button:hover{
+	transform:scale(1.1);
+}
+
+.suambutton button:active{
+	transform:scale(0.3);
+}
+
+.comments{
+	width:50%;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:white;
+	text-align:left;
+	padding:30px;
+	padding-top:30px;
+	padding-bottom:40px;
+}
+
+.maincomment{
+	background:#eeeeee;
+	font-size:20px;
+	text-transform:uppercase;
+	letter-spacing:7px;
+}
+
+.maincomment #biggest{font-size:30px; letter-spacing:10px; }

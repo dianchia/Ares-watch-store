@@ -1,0 +1,47 @@
+.newsarticle{
+	width:90%;
+	position:relative;
+	background-color:#eeeeee;
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.imagebox{
+	display:block;
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	max-height:700px;
+}
+
+#images{
+	text-align:center;
+}
+
+#newstitle{
+	width:90%; 
+	margin-left: auto; 
+	margin-right: auto;
+	color:black;
+	font-size:50px;
+	text-transform:uppercase;
+	font-weight: bold;
+	padding:20px;
+}
+
+#newscontent{
+	width:80%; 
+	margin-left: auto; 
+	margin-right: auto;
+	text-align:left;
+	font-size:27px;
+	letter-spacing:10px;
+}
+
+#newsexample{
+	font-size:25px;
+	letter-spacing:13px;
+	width:80%; 
+	margin-left: auto; 
+	margin-right: auto;
+}
